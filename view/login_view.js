@@ -1,0 +1,9 @@
+define(function(require, exports, module){return function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += '<form action="" name="registration" class="registration-form clear login-box"><h3 class="registration-t">登录</h3><div class="registration-l l"><input type="email" placeholder="E-mail或者用户名" class="text"><input type="password" placeholder="密码" class="text"><p class="clear"><a href="#" class="r">忘记密码？</a></p><button type="submit" class="btn b-orange c-fff">登录</button></div><div class="registration-r r"><a href="#" class="b-blue c-fff">使用QQ登录</a><a href="#">使用微信登录</a><p><span>还没有账户？</span><a href="#">立即注册</a></p></div></form>';
+
+}
+return __p
+}});

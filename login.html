@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="index.min.css">
+</head>
+<body>
+	<header></header>
+	<div class="login"></div>
+	<footer></footer>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/seajs/dist/sea.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script>
+		seajs.config({
+			base:'./'
+		});
+		seajs.use(['js/login'],function(init){
+			init.initpage();
+		});
+	</script>
+</body>
+</html>

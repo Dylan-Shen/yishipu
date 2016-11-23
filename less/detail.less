@@ -1,0 +1,56 @@
+.d-banner{
+	width: 630px;
+	.d-banner-img{
+		width: 288px;
+		height: 216px;
+		float: left;
+		img{
+			display: block;
+		}
+	}
+	.d-banner-content{
+		background: #fff;
+		width: 342px;
+		float: right;
+		height: 216px;
+		padding: 15px 0px 0px 20px;
+		h2{
+			font-size: 18px;
+			color:#000;
+		}
+		.grade{
+			margin-top: 5px;
+			display: inline-block;
+			width: 125px;
+			height: 20px;
+			background: url('images/sprite.gif') no-repeat 0px -59px;
+			span{
+				float: left;
+				display: inline-block;
+				height: 20px;
+				top: 0px;
+				left: 0px;
+				display: block;
+				width: 25px;
+				cursor: pointer;
+				&.active{
+					background: #fff url('images/sprite.gif') no-repeat 0px -39px;
+					&:nth-of-type(4){
+						background-position-x:-75px; 
+					}
+					&:nth-of-type(5){
+						background-position-x:-100px; 
+					}
+				}
+			}
+		}
+		>span{
+			span{
+				color:#ff7501;
+				line-height: 25px;
+				font-size: 16px;
+				margin-left: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+<div class="m-class w960">
+	<h2 class="m-class-t">菜谱大全</h2>
+	## for(var i = 0 ; i < material.length ; i ++){ ##
+	<a href=#{{material[i].materialName}}>{{material[i].materialName}}</a>
+	## } ##
+</div>
+## for(var j = 0 ; j < material.length ; j ++){ ##
+	## if(j == 0){ ##
+		<div class="m-b w960 b-fff">
+			<a name={{material[j].materialName}}></a>
+			<h3 class="m-b-t">{{material[j].materialName}}</h3>
+			<div class="m-b-c">
+			## for(var i = 0 ; i < material[j].part.length ; i ++ ){ ##
+				<a href=way.html?mid={{j}}&pid={{i}}>{{material[j].part[i].partName}}</a>
+			## } ##
+			</div>
+		</div>	
+	##} ##
+## } ##
+<div class="m-b m-b-b0 clear w960">
+	<div class="m-b-l">
+	## for(var j = 1 ; j < 9 ; j ++){ ##
+		## if(j % 2 == 1){ ##
+		<div class="m-b">
+			<a name={{material[j].materialName}}></a>
+			<h3 class="m-b-t">{{material[j].materialName}}</h3>
+			<div class="m-b-c">
+			## for(var i = 0 ; i < material[j].part.length ; i ++ ){ ##
+				<a href=way.html?mid={{j}}&pid={{i}}>{{material[j].part[i].partName}}</a>
+			## } ##
+			</div>
+		</div>
+		##} ##
+	## } ##
+	</div>
+	<div class="m-b-r">
+	## for(var j = 1 ; j < 9 ; j ++){ ##
+		## if(j % 2 == 0){ ##
+		<div class="m-b">
+			<a name={{material[j].materialName}}></a>
+			<h3 class="m-b-t">{{material[j].materialName}}</h3>
+			<div class="m-b-c">
+			## for(var i = 0 ; i < material[j].part.length ; i ++ ){ ##
+				<a href=way.html?mid={{j}}&pid={{i}}>{{material[j].part[i].partName}}</a>
+			## } ##
+			</div>
+		</div>
+		##} ##
+	## } ##
+	</div>
+</div>
+## for(var j = 9 ; j < material.length ; j ++){ ##
+	<div class="m-b w960 b-fff">
+		<a name={{material[j].materialName}}></a>
+		<h3 class="m-b-t">{{material[j].materialName}}</h3>
+		<div class="m-b-c">
+		## for(var i = 0 ; i < material[j].part.length ; i ++ ){ ##
+			<a href=way.html?mid={{j}}&pid={{i}}>{{material[j].part[i].partName}}</a>
+		## } ##
+		</div>
+	</div>	
+## } ##
